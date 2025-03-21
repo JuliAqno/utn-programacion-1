@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main()
+{
+	int a,b,c,may,mn,md;
+	printf("ingrese tres numeros tal que el programa lo ordene de menor a mayor");
+	printf("\n");
+	printf("ingrese el primer valor: ");
+	scanf("%d",&a);
+	printf("\n");
+	printf("ingrese el segundo valor: ");
+	scanf("%d",&b);
+	printf("\n");
+	printf("ingrese el tercer valor: ");
+	scanf("%d",&c);
+	may=a;
+	if(b>a){
+	  may=b;
+	}
+	if(c>may){
+	   may=c;
+	}
+	mn=a;
+	if(b<a){
+		mn=b;
+	}
+	if(c<mn){
+		mn=c;
+	}
+	md=(a+b+c)-(may+mn);
+	printf("el orden es: %d,%d y %d",mn,md,may);
+return 0;
+
+}
