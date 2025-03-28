@@ -1,0 +1,29 @@
+include <stdio.h> 
+
+int main() {
+	int a,i,conty;
+	float b,contador;
+	contador=0;
+	conty=0;
+	i=0;
+	printf("ingrese la cantidad de calificaciones que desea calcular entre 0 y 10: ");
+	scanf("%d",&a);
+
+	while(i<a){
+		printf("calificacion: ");
+		scanf("%f",&b);
+		i=i+1;
+		contador=contador+b;
+		conty++;
+
+		if(b<0){
+			a=a+1;
+		}
+	}
+	printf("la cantidad de notas es %d\n",conty);
+	printf("el promedio es : %.2f",contador/conty);
+
+	
+	
+	return 0;
+}
