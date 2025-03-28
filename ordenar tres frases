@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){  
+	char f1[100],f2[100],f3[100];
+	int a,b,c;
+	printf("ingrese tres frases\n");
+	printf("primer frase: ");
+	scanf("%s",&f1);
+	printf("segunda frase: ");
+	scanf("%s",&f2);
+	printf("tercer frase: ");
+	scanf("%s",&f3);
+	
+	a=strlen(f1);
+	b=strlen(f2);
+	c=strlen(f3);
+	if (a > b)
+	{
+		if (b > c)
+		{
+			printf("%s\n%s\n%s\n", f1, f2, f3);
+		}
+		else
+		
+		{if (a > c)
+		{
+			printf("%s\n%s\n%s\n", f1, f3, f2);
+		}
+		else
+		{
+			printf("%s\n%s\n%s\n", f3, f1, f2);
+		}
+		}
+	}
+	else
+	{
+		if (c > b)
+		{
+			printf("%s\n%s\n%s\n", f3, f2, f1);
+		}
+		else
+		{
+			if (a > c)
+			{
+				printf("%s\n%s\n%s\n", f2, f1, f3);
+			}
+			else
+			{
+				printf("%s\n%s\n%s\n", f2, f3, f1);
+			}
+		}
+	}
+	return 0;
+}
