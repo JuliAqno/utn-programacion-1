@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+	int a,b,suma,resta,multiplicacion;
+	printf("ingrese dos numeros ");
+	printf("\nprimer numero: ");
+	scanf("%d",&a);
+	printf("\nsegundo numero: ");
+	scanf("%d",&b);
+	suma=a+b;
+	resta=a-b;
+	multiplicacion=a*b;
+	printf("\nel resultado de la suma es %d",suma);
+	printf("\nel resultado de la resta es %d",resta);
+	printf("\nel resultado de la nultiplicacion es %d",multiplicacion);
+	
+	
+	
+	
+	return 0;
+}
