@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+	int a,b,sum;
+	printf("ingrese dos numeros enteros\n");
+	printf("primer numero: ");
+	scanf("%d",&a);
+	printf("\nsegundo numero: ");
+	scanf("%d",&b);
+	sum=a+b;
+	printf(" la suma de %d y %d es %d",a,b,sum);
+	
+
+	
+	return 0;
+}
