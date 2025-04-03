@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+	float a,b,c,promedio;
+	printf("ingrese tres notas para que se muestre el promedio");
+	printf("\nprimer nota: ");
+	scanf("%f",&a);
+	printf("\nsegunda nota: ");
+	scanf("%f",&b);
+	printf("\ntercer nota: ");
+	scanf("%f",&c);
+	promedio=(a+b+c)/3;
+	printf("el promedio de las notas es %.2f",promedio);
+	
+	
+	return 0;
+}
