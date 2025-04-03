@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+	int i,contador;
+	printf("muestre por pantalla los numeros del 1 al 10");
+	for(int i=0; i<10; i++) {
+		contador=i+1;
+		printf("\nnumero:%d",contador);
+	}
+	
+	
+	
+	return 0;
+}
