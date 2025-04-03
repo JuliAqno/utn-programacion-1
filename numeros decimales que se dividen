@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+	float a,b,division;
+	printf("ingrese dos numeros decimales para que se dividan");
+	printf("\nprimer numero: ");
+	scanf("%f",&a);
+	printf("\nsegundo numero: ");
+	scanf("%f",&b);
+	division=a/b;
+	printf("el resultado de la division es %.2f",division);
+	
+	
+	
+	
+	return 0;
+}
+
