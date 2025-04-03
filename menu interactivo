@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+int main() {
+	int o,a,b,n,resultado;
+	printf("\t\tMENU:\n");
+	printf("1-Suma\n");
+	printf("2-Resta\n");
+	printf("3-Tabla de multiplicacion de un numero\n");
+	printf("0-salir\n");
+	printf("Seleccione una opcion: ");
+	scanf("%d",&o);
+	switch(o){
+	case 1:
+	
+		
+		printf("\nusted selecciono la suma\n");
+		printf("primer numero: ");
+		scanf("%d",&a);
+		printf("\nsegundo numero: ");
+		scanf("%d",&b);
+		printf("\nel resultado de la suma es %d",a+b);
+		break;
+	
+	case 2: 
+	
+		
+		printf("\nusted selcciono la resta\n");
+		printf("\nprimer numero: ");
+		scanf("%d",&a);
+		printf("\nsegundo numero: ");
+		scanf("%d",&b);
+		printf("\nel resultado de la resta es %d",a-b);
+		break;
+	
+	case 3:
+	
+		printf("\nusted selecciono la multiplicacion");
+		printf("\ningrese un numero tal que muestre la tabla de multiplicar: ");
+		scanf("%d",&n);
+		resultado=1;
+		for ( int i=1; i<=10; i++){
+			
+			resultado=n*i;
+			printf(" \nel resultado de %d x %d = %d",n,i,resultado);}
+		break;
+		
+		
+	
+	default:
+		printf("usted salio del menu");
+		
+	}	
+	
+	
+	
+	return 0; 
+}
