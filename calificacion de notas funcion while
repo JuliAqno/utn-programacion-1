@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+	int a,b;
+	b=1;
+	
+	while(b==1){
+		printf("\ningrese una nota entre 0 y 100: ");
+		scanf("%d",&a);
+		if(a>=90 && a<=100){
+			printf("\nla calificacio es sobresaliente");
+		}else{
+			if(a>=80 && a <=89){
+				printf("\nla calificacion es muy bueno");
+			}else{
+				if(a>=70 && a<=79){
+					printf("\nla calificacion es bueno");
+				}else {
+					if(a>=60 && a<=69){
+						printf("\nla calificacion es aprobado");
+					}else {
+						if(a<60){
+							printf("\nla calificacion es reprobado");
+						}
+					}
+				}
+			}
+		}
+		
+		printf("\n\npresione 1 para ingresar otra nota,si desea salir presione 2: ");
+		scanf("%d",&b);
+		b==1;
+		b==2;
+	};
+	return 0;
+}
