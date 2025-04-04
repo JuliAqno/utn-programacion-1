@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h> //necesario para iniciar la semilla
+
+int main() {
+	
+	//juego de adivinanzas 
+	srand(time(NULL));
+	int numeroaleatorio = (rand()%101);
+	int a,b,c,i;
+	b=0;
+	c=1;
+	
+	printf("\nEste programa genera un numero aleatorio y usted debe adivinarlo en un maximo de 7 intentos, si acierta el numero se le suma 1 punto");
+	printf("\nel numero ya ha sido generado, a jugar!");
+	while(c==1)
+	{
+	for (i=0; i<=7; i++){
+		printf("\n\ningrese su numero: ");
+		scanf("%d",&a);
+		if(a>numeroaleatorio){
+			printf("\n¡Muy alto!Pruebe con otro numero");
+		}else{
+			if(a<numeroaleatorio){
+				printf("\n¡Muy bajo!Pruebe con otro numero");
+			}else{
+				if(a=numeroaleatorio){
+					printf("\n¡Adivinaste!");
+					b=b+1;
+					printf("\nsumaste %d puntos",b);
+					i=8;
+					
+				}else{
+					if(i=7){
+						printf("\nsuerte la proxima!");
+					}
+				}
+			}
+		}
+	}
+	printf("\npresione 1 para jugar una nueva partida, de otro modo presione 2: ");
+	scanf("%d",&c);
+	numeroaleatorio = (rand()%101);
+	
+	};
+	printf("en total sumaste %d puntos",b);
+	
+	return 0;
+}
