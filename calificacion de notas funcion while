@@ -29,8 +29,7 @@ int main() {
 		
 		printf("\n\npresione 1 para ingresar otra nota,si desea salir presione 2: ");
 		scanf("%d",&b);
-		b==1;
-		b==2;
+		
 	};
 	return 0;
 }
