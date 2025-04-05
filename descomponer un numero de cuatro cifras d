@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+	int a,b;
+	b=1;
+	printf("este programa va a permitir ingresar un numero de cuatro cifras y lo va a descomponer\n");
+
+	while(b==1){
+		printf("ingrese el numero: ");
+		scanf("%d",&a);
+		printf("\nel millar de este numero es %d",a/1000);
+		printf("\nla centena de  este numero es %d",(a%1000)/100);
+		printf("\nla decena de este numero es %d",(a%100)/10);
+		printf("\nla unidad de este numero es %d",a%10);
+		printf("\ndeseas ingresar otro numero? \n1-si\n2-no\n");
+		scanf("%d",&b);
+		
+	}
+	printf("gracias:)");
+	
+	
+	
+	return 0;
+}
