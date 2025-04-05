@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+	int a,b;
+	b=1;
+	printf("este programa va a permitir ingresar un numero de dos cifras y lo va a mostrar como su decena y unidad\n");
+
+	while(b==1){
+		printf("ingrese el numero: ");
+		scanf("%d",&a);
+		printf("\nla decena de este numero es %d",a/10);
+		printf("\nla unidad de  este numero es %d",a%10);
+		printf("\ndeseas ingresar otro numero? \n1-si\n2-no\n");
+		scanf("%d",&b);
+		
+	}
+	printf("gracias:)");
+	
+	
+	
+	return 0;
+}
