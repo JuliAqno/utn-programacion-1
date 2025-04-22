@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+	// Inicializar la semilla con la hora actual
+	srand(time(NULL));
+	
+	
+	// Generar número aleatorio entre 0 y 13
+	
+	int a,puntos; 
+	a=1;
+	puntos=0;
+	char eleccion; 
+	printf("\t\tBIENVENIDO AL JUEGO DE POKER DE ALTA-BAJA\n");
+	printf("Usted debe adivinar el valor de la carta si es alta(a) o baja(b), va a acertar si el valor de la carta es inferior a 7 (baja) o superio a 7 (alta) y si sale 7,pierde\n");
+	printf("\n\t\t\t\t A jugar!");
+	while(a==1){
+		int carta = (rand() % 13)+1;
+		printf("\nIngrese su eleccion: ");
+		scanf(" %c",&eleccion);
+		if(carta==7){
+			printf("\nLa carta es %d.¡Perdiste!¡Suerte la proxima!",carta);
+			break;
+		}
+		else{
+			if(carta<7 && eleccion=='b'){
+				printf("\n¡Adivinaste! La carta es %d",carta);
+				puntos+=2;
+				
+			}
+			else{
+				if(carta>7 && eleccion=='a'){
+					printf("\n¡Adivinaste! La carta es %d",carta);
+					puntos+=2;
+					
+				}
+				else{
+					printf("\n¡INCORRECTO! La carta era %d",carta);
+					break;
+				}
+			}
+		}
+		
+		printf("\n¿Desea jugar de nuevo?\n1-Si\n2-No\n");
+		scanf("%d",&a);
+	};
+	printf("\nUsted ha sumado %d puntos",puntos);
+	
+	
+	
+	return 0;
+}
