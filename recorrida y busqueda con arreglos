@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+	int arreglo[5]={5,10,15,20,25};
+	int buscar; 
+	int encontrado=0;
+	printf("este programa va a permitir mostrar un arreglo y buscar un elemento ingresado por teclado\n");
+	for( int i=0;i<5;i++){
+		printf(" el elemento de la posicion %d es: %d\n ",i,arreglo[i]);
+	}
+	//buscar un elemento en el arreglo
+	printf("\ningrese el elemento que desea buscar en el arreglo, y si existe, se va a mostrar: ");
+	scanf("%d",&buscar);
+	for( int i=0;i<5;i++){
+		if(buscar==arreglo[i]){
+			printf("\nel elemento %d se encuentra en la posicion %d",buscar,i);
+			encontrado=1;
+			break;
+			
+		}
+	}
+	if(encontrado==0){
+		
+		printf("\nel elemento %d no se encuentra en ninguna posicion del arreglo",buscar);
+		encontrado=0;
+		
+	}
+	
+	
+	return 0;
+}
+
