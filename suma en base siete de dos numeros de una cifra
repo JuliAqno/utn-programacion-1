@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+	int num1,num2,resultado;
+	printf("este programa va a sumar en base siete dos numeros de una cifra ingresados por el usuario\n");
+	printf("ingrese los numeros:\n");
+	scanf("%d %d",&num1,&num2);
+	resultado=num1+num2; 
+	printf("el resultado  de %d + %d es %d%d",num1,num2,resultado/7,resultado%7);
+	
+	
+	return 0;
+}
