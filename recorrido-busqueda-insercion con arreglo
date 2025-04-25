@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main() {
+	int arreglo[5]={5,20,25,30,35};
+	int buscar; 
+	int bandera=0;
+	int size = sizeof(arreglo) / sizeof(arreglo[0]);
+	//recorrido
+	for(int i=0;i<5;i++){
+		printf("el elemento de la posicion %d es:%d \n",i,arreglo[i]);
+	}
+	//busqueda
+	printf("\ningrese un elemento para buscar en el arreglo: ");
+	scanf("%d",&buscar);
+	for(int i=0;i<5;i++){
+		
+		if(buscar==arreglo[i]){
+			printf("\nel elemento %d se encuentra en la posicion %d",buscar,i);
+			bandera=1;
+		
+		}else{
+			printf("\nel elemento %d no se encuentra en ninguna posicion del arreglo",buscar);
+			bandera=0;
+			break;
+		}
+	}
+	 //insercion 
+	printf("\n El arreglo original es :");
+	for(int i=0;i<size;i++){
+		printf("\nPosicion %d: %d",i,arreglo[i]);
+	}
+	for(int i=0;i<size;i++){
+		if(i==2){
+			arreglo[i]=100; //reemplaza el valor de la posicion 2
+		}
+	}
+	printf("\n El arreglo modificado :");
+	for(int i=0;i<size;i++){
+		printf("\nPosicion %d: %d",i,arreglo[i]);
+	}
+	
+	
+
+	return 0;
+}
