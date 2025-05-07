@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main() {
+	char cadena[5]={'h','o','l','a','0'};
+	int i;
+	i=0;
+	printf("la cadena es:\n");
+	while(i<5){
+		printf("caracter %d: %c\n",i,cadena[i]);
+		i++;
+	}
+	getch();
+	
+	
+	
+	return 0;
+}
+
+
