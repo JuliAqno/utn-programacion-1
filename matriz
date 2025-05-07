@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+	int arreglo[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+	int matriz[3][3];
+	int indice = 0;
+	printf("Dado un arreglo numerico de 10 elementos se pide cargarlos en una matriz 3x3 con estructuras repetitivas\n");
+	for(int i=0;i<3;i++){
+		for(int j=0;j<3;j++){
+			matriz[i][j] = arreglo[indice];
+			indice++;
+		}
+	}
+	printf("La matriz 3x3:\n");
+		   for(int i=0;i<3;i++){
+			   for(int j=0;j<3;j++){
+				   printf("%d ",matriz[i][j]);
+			   }
+			   printf("\n");
+		   }
+		  
+		   
+		   
+		   return 0;
+}
+
