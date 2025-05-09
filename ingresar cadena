@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#define max_element 100
+
+int main() {
+	char cadena[max_element];
+	
+	printf("ingrese una palabra o frase: ");
+	scanf("%s",&cadena);
+	int longitud=strlen(cadena);
+	printf("\nla longitud es de %d: ",longitud);
+	
+	
+	return 0;
+}
