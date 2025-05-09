@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#define max_element 100
+
+int main() {
+	char cad1[max_element];
+	char cad2[max_element];
+	
+	printf("ingrese una palabra: ");
+	scanf("%s",&cad1);
+	printf(" \ningrese otra palabra: ");
+	scanf("%s",&cad2);
+	if(strcmp(cad1,cad2) == 0){
+		printf(" \nlas palabras tienen la misma cantidad de letras");
+	}else{
+		if(strcmp(cad1,cad2) !=0){
+			printf ("\nlas palabras tiene distinta cantidad de letras");
+		}
+	}
+	
+	
+	return 0;
+}
