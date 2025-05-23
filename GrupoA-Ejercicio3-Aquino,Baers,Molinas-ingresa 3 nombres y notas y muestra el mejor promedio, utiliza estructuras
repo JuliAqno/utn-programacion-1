@@ -8,7 +8,9 @@ Cargá 3 alumnos por teclado.
 
 Mostrá al alumno con mejor nota.
 */
-struct alumno{
+
+//Se define la estructura que contendra los datos:
+struct alumno{                  
 	char nombre[30];
 	int edad;
 	int nota;
@@ -17,6 +19,7 @@ int main() {
 	struct alumno arr[nro];
 	int i;
 	int indice = 0;
+//Pedira Cargar los datos de la estructura
 	for(i=0;i<nro;i++){
 		printf("Ingrese los Datos de los estudiantes: %d\n",i+1);
 		
@@ -31,17 +34,20 @@ int main() {
 		
 		printf("\n");
 	}
+//Imprimira por pantalla los datos de los estudiantes:
 	for(i=0;i<nro;i++){
 		printf("\n El estudiante %s: \n",arr[i].nombre);
 		printf("\n Edad del estudiante: %d \n",arr[i].edad);
 		printf("\n Su nota es: %i \n",arr[i].nota);
 		
 	}
+//Compara las notas de los estudiantes:
 	for (i=1;i< nro;i++) {
 		if (arr[i].nota > arr[indice].nota) {
 			indice = i;
 		}
 	}
+//Imprime por pantalla los datos del estudiante con mejor nota
 	printf("El alumno con la mejor nota es:\n");
 	printf("Nombre: %s\n", arr[indice].nombre);
 	printf("Edad: %d\n", arr[indice].edad);
