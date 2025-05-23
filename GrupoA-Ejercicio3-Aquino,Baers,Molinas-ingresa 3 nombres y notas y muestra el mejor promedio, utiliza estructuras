@@ -1,0 +1,50 @@
+#include <stdio.h>
+#define nro 3
+/*Definí una estructura Alumno con nombre, edad y nota final.
+
+
+Cargá 3 alumnos por teclado.
+
+
+Mostrá al alumno con mejor nota.
+*/
+struct alumno{
+	char nombre[30];
+	int edad;
+	int nota;
+};
+int main() {
+	struct alumno arr[nro];
+	int i;
+	int indice = 0;
+	for(i=0;i<nro;i++){
+		printf("Ingrese los Datos de los estudiantes: %d\n",i+1);
+		
+		printf("\nIngrese el el nombre del alumno: \n");
+		scanf("%s", &arr[i].nombre);
+		
+		printf("\nIngrese la edad del estudiante: \n");
+		scanf("%i", &arr[i].edad);
+		
+		printf("\nIngrese la nota (0-10) del estudiante: \n");
+		scanf("%d", &arr[i].nota);
+		
+		printf("\n");
+	}
+	for(i=0;i<nro;i++){
+		printf("\n El estudiante %s: \n",arr[i].nombre);
+		printf("\n Edad del estudiante: %d \n",arr[i].edad);
+		printf("\n Su nota es: %i \n",arr[i].nota);
+		
+	}
+	for (i=1;i< nro;i++) {
+		if (arr[i].nota > arr[indice].nota) {
+			indice = i;
+		}
+	}
+	printf("El alumno con la mejor nota es:\n");
+	printf("Nombre: %s\n", arr[indice].nombre);
+	printf("Edad: %d\n", arr[indice].edad);
+	printf("Nota: %d\n", arr[indice].nota);
+	return 0;
+}
